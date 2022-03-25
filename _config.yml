@@ -103,6 +103,7 @@ disqus:
     shortname: 
 
 markdown: kramdown
+mathjax: true
 
 kramdown:
   mathjax: true
