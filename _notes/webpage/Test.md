@@ -1,7 +1,7 @@
 ---
-title:"Filename"  
+title:"Test note"  
 notetype: feed
-date: DD-MM-YYYY
+date: 25-03-2022
 ---
 
 Test notes.
