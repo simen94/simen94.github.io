@@ -43,7 +43,7 @@ For hosting on your local network, inside a docker container, install `docker` a
 ```Terminal
 $ docker-compose up -d
 ```
-> **Note**:-
+> **Note**:-    
 > 
 > This container is built upon on alpine based ruby image. There's an official Jekyll image available in docker hub which only support `amd64` images. You can opt to use that if you are running the container on an 64bit PC. If you want to run this on an ARM based system like Raspberry Pi, this would be a better option.
 >
