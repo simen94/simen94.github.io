@@ -171,6 +171,23 @@ config=TeX-AMS-MML_HTMLorMML"></script>
                 </div>
             {%- endif -%}
 
+            <!--- CASE 6 : Research Page-->
+
+            {%- if page.permalink == "/research" -%}
+            {%- if site.preferences.homepage.enabled -%}
+                    <!--- Show Homepage -->
+                    {%- include Research.html -%}
+                    <script src="/assets/js/modeswitcher.js"></script>
+            {%- else -%}
+                    <!--- Show Feed Part -->
+            <div class="column is-half">
+                    {%- include FeedContent.html -%}
+                    {%- include Feed.html -%}
+                    {%- include Footer.html -%}             
+            </div>
+                    {%- endif -%}
+            {%- endif -%}
+
         </div>
     </section>     
 </body>
