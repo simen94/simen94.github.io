@@ -188,6 +188,23 @@ config=TeX-AMS-MML_HTMLorMML"></script>
                     {%- endif -%}
             {%- endif -%}
 
+            <!--- CASE 7 : Events Page-->
+
+            {%- if page.permalink == "/events" -%}
+            {%- if site.preferences.homepage.enabled -%}
+                    <!--- Show Homepage -->
+                    {%- include Events.html -%}
+                    <script src="/assets/js/modeswitcher.js"></script>
+            {%- else -%}
+                    <!--- Show Feed Part -->
+            <div class="column is-half">
+                    {%- include FeedContent.html -%}
+                    {%- include Feed.html -%}
+                    {%- include Footer.html -%}             
+            </div>
+                    {%- endif -%}
+            {%- endif -%}
+
         </div>
     </section>     
 </body>
